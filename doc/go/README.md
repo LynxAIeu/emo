@@ -1,6 +1,6 @@
 # Emo Go library
 
-Emoji based semantic scoped debuging for Go
+Emoji based semantic scoped debugging for Go
 
 ## Usage
 
@@ -220,7 +220,6 @@ Note: The fields `From`, `File` and `Line`
 are always computed when the `zone.Hook` is set,
 even is `stack=false` is set.
 
-
 ## Hooks
 
 A callback can be passed to a zone.
@@ -299,7 +298,7 @@ emo.GlobalTracing(true)
     )
     ```
 
-2. Improve performance by being inspired by [logf](https://github.com/zerodha/logf):
+2. Improve performance, see [logf](https://github.com/zerodha/logf):
 
        BenchmarkOneField_WithColor       205.7 ns/op    0 allocs/op
        BenchmarkThreeFields_WithColor    379.4 ns/op    0 allocs/op
