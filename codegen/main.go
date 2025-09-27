@@ -4,13 +4,13 @@ import (
 	"flag"
 	"fmt"
 
-	"emo/codegen/core"
-	"emo/codegen/dart"
-	"emo/codegen/doc"
-	"emo/codegen/golang"
-	"emo/codegen/ts"
+	"github.com/LM4eu/emo/codegen/core"
+	"github.com/LM4eu/emo/codegen/dart"
+	"github.com/LM4eu/emo/codegen/doc"
+	"github.com/LM4eu/emo/codegen/golang"
+	"github.com/LM4eu/emo/codegen/ts"
 
-	py "emo/codegen/python"
+	py "github.com/LM4eu/emo/codegen/python"
 )
 
 func main() {

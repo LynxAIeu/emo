@@ -1,7 +1,7 @@
 package ts
 
 import (
-	"emo/codegen/core"
+	"github.com/LM4eu/emo/codegen/core"
 )
 
 func GenTs(ref []core.Ref) {

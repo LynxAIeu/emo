@@ -1,4 +1,4 @@
-module emo
+module github.com/LM4eu/emo
 
 go 1.25.1
 

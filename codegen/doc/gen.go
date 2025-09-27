@@ -3,7 +3,7 @@ package doc
 import (
 	"fmt"
 
-	"emo/codegen/core"
+	"github.com/LM4eu/emo/codegen/core"
 )
 
 func GenDoc(ref []core.Ref) {

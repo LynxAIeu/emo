@@ -5,7 +5,7 @@ import (
 	"log"
 	"path/filepath"
 
-	"emo/codegen/core"
+	"github.com/LM4eu/emo/codegen/core"
 
 	"github.com/dolmen-go/codegen"
 )

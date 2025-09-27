@@ -1,7 +1,7 @@
 package dart
 
 import (
-	"emo/codegen/core"
+	"github.com/LM4eu/emo/codegen/core"
 )
 
 func GenCode(ref []core.Ref) {
