@@ -16,7 +16,7 @@ setup(
     long_description_content_type="text/markdown",
     author="Teal Finance",
     author_email="Teal.Finance@pm.me",
-    url="https://github.com/teal-finance/emo",
+    url="https://github.com/LM4eu/emo",
     keywords=["debuging", "emoji"],
     classifiers=[
         "Development Status :: 3 - Alpha",

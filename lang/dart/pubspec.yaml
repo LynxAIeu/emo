@@ -1,6 +1,6 @@
 name: emodebug
 description: Emoji based semantic debuging. Debug the state and execution flow of a program with familiar idioms
-homepage: https://github.com/teal-finance/emo
+homepage: https://github.com/LM4eu/emo
 version: "0.6.0"
 
 environment:
