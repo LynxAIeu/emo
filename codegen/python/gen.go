@@ -7,13 +7,13 @@ import (
 func GenPy(ref []core.Ref) {
 	code := codeStart
 	for _, item := range ref {
-		code += genFunc(item.Name, item.Emoji, item.IsError)
+		code += genFunc(item.Name, item.Emoji)
 	}
 
 	core.Write("lang/python/pyemo/emo_gen.py", code)
 }
 
-func genFunc(name, emoji string, isError bool) string {
+func genFunc(name, emoji string) string {
 	name = core.Uncapitalized(name)
 	name = core.SnakeCase(name)
 

@@ -7,14 +7,14 @@ import (
 func GenCode(ref []core.Ref) {
 	code := codeStart
 	for _, item := range ref {
-		code += genFunc(item.Name, item.Emoji, item.IsError)
+		code += genFunc(item.Name, item.Emoji)
 	}
 	code += codeEnd
 
 	core.Write("lang/dart/lib/src/debug.dart", code)
 }
 
-func genFunc(name, emoji string, isError bool) string {
+func genFunc(name, emoji string) string {
 	name = core.Uncapitalized(name)
 
 	return `
