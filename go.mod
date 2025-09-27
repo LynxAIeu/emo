@@ -1,4 +1,4 @@
-module github.com/teal-finance/emo
+module emo
 
 go 1.22
 

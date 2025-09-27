@@ -1,7 +1,7 @@
 package ts
 
 import (
-	"github.com/teal-finance/emo/codegen/core"
+	"emo/codegen/core"
 )
 
 func GenTs(ref []core.Ref) {

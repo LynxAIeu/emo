@@ -8,7 +8,7 @@ Declare a debug zone in a package:
 
 ```go
 import (
-  "github.com/teal-finance/emo"
+  "emo"
 )
 
 var zone = emo.NewZone("myLib")

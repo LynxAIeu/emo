@@ -4,12 +4,13 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/teal-finance/emo/codegen/core"
-	"github.com/teal-finance/emo/codegen/dart"
-	"github.com/teal-finance/emo/codegen/doc"
-	"github.com/teal-finance/emo/codegen/golang"
-	py "github.com/teal-finance/emo/codegen/python"
-	"github.com/teal-finance/emo/codegen/ts"
+	"emo/codegen/core"
+	"emo/codegen/dart"
+	"emo/codegen/doc"
+	"emo/codegen/golang"
+	"emo/codegen/ts"
+
+	py "emo/codegen/python"
 )
 
 func main() {

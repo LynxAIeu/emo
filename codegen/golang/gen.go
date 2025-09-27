@@ -5,8 +5,9 @@ import (
 	"log"
 	"path/filepath"
 
+	"emo/codegen/core"
+
 	"github.com/dolmen-go/codegen"
-	"github.com/teal-finance/emo/codegen/core"
 )
 
 func GenGo(ref []core.Ref) {

@@ -3,7 +3,7 @@ package doc
 import (
 	"fmt"
 
-	"github.com/teal-finance/emo/codegen/core"
+	"emo/codegen/core"
 )
 
 func GenDoc(ref []core.Ref) {

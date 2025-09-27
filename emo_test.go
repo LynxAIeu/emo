@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/teal-finance/emo"
+	"emo"
 )
 
 func TestBaseEmo(t *testing.T) {

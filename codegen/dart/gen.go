@@ -1,7 +1,7 @@
 package dart
 
 import (
-	"github.com/teal-finance/emo/codegen/core"
+	"emo/codegen/core"
 )
 
 func GenCode(ref []core.Ref) {

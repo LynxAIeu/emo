@@ -1,7 +1,7 @@
 package py
 
 import (
-	"github.com/teal-finance/emo/codegen/core"
+	"emo/codegen/core"
 )
 
 func GenPy(ref []core.Ref) {
