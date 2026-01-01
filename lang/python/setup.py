@@ -14,8 +14,8 @@ setup(
     description="Emoji based semantic scoped debuging ",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    author="Teal Finance",
-    author_email="Teal.Finance@pm.me",
+    author="The emo contributors",
+    author_email="hello@lynxai.eu",
     url="https://github.com/LM4eu/emo",
     keywords=["debuging", "emoji"],
     classifiers=[
