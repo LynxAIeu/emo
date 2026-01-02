@@ -1,7 +1,7 @@
 package py
 
 import (
-	"github.com/LM4eu/emo/codegen/core"
+	"github.com/LynxAIeu/emo/codegen/core"
 )
 
 func GenPy(ref []core.Ref) {

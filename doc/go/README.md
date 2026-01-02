@@ -6,7 +6,7 @@ Emoji based semantic scoped debugging for Go
 
 Add the `emo` dependency:
 
-    go get github.com/LM4eu/emo
+    go get github.com/LynxAIeu/emo
 
 Declare a debug zone in a package:
 

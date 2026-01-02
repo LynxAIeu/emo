@@ -4,13 +4,13 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/LM4eu/emo/codegen/core"
-	"github.com/LM4eu/emo/codegen/dart"
-	"github.com/LM4eu/emo/codegen/doc"
-	"github.com/LM4eu/emo/codegen/golang"
-	"github.com/LM4eu/emo/codegen/ts"
+	"github.com/LynxAIeu/emo/codegen/core"
+	"github.com/LynxAIeu/emo/codegen/dart"
+	"github.com/LynxAIeu/emo/codegen/doc"
+	"github.com/LynxAIeu/emo/codegen/golang"
+	"github.com/LynxAIeu/emo/codegen/ts"
 
-	py "github.com/LM4eu/emo/codegen/python"
+	py "github.com/LynxAIeu/emo/codegen/python"
 )
 
 func main() {

@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/LM4eu/emo"
+	"github.com/LynxAIeu/emo"
 )
 
 func TestBaseEmo(t *testing.T) {
