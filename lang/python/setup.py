@@ -15,8 +15,8 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="The emo contributors",
-    author_email="hello@lynxai.eu",
-    url="https://github.com/LynxAIeu/emo",
+    author_email="hello@lynxai.team",
+    url="https://github.com/lynxai-team/emo",
     keywords=["debuging", "emoji"],
     classifiers=[
         "Development Status :: 3 - Alpha",

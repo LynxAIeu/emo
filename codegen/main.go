@@ -4,13 +4,13 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/LynxAIeu/emo/codegen/core"
-	"github.com/LynxAIeu/emo/codegen/dart"
-	"github.com/LynxAIeu/emo/codegen/doc"
-	"github.com/LynxAIeu/emo/codegen/golang"
-	"github.com/LynxAIeu/emo/codegen/ts"
+	"github.com/lynxai-team/emo/codegen/core"
+	"github.com/lynxai-team/emo/codegen/dart"
+	"github.com/lynxai-team/emo/codegen/doc"
+	"github.com/lynxai-team/emo/codegen/golang"
+	"github.com/lynxai-team/emo/codegen/ts"
 
-	py "github.com/LynxAIeu/emo/codegen/python"
+	py "github.com/lynxai-team/emo/codegen/python"
 )
 
 func main() {

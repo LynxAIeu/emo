@@ -1,4 +1,4 @@
-module github.com/LynxAIeu/emo
+module github.com/lynxai-team/emo
 
 go 1.25.5
 

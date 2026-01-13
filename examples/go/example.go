@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/LynxAIeu/emo"
+	"github.com/lynxai-team/emo"
 )
 
 func hook(evt emo.Event) {

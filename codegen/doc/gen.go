@@ -3,7 +3,7 @@ package doc
 import (
 	"fmt"
 
-	"github.com/LynxAIeu/emo/codegen/core"
+	"github.com/lynxai-team/emo/codegen/core"
 )
 
 func GenDoc(ref []core.Ref) {
