@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"path/filepath"
+	"strings"
 
 	"github.com/lynxai-team/emo/codegen/core"
 
@@ -11,12 +12,13 @@ import (
 )
 
 func GenGo(ref []core.Ref) {
-	template := fileStart
+	var template strings.Builder
+	template.WriteString(fileStart)
 	for _, item := range ref {
-		template += genFunc(item.Name, item.Emoji, item.IsError)
+		template.WriteString(genFunc(item.Name, item.Emoji, item.IsError))
 	}
 
-	tmpl := codegen.MustParse(template)
+	tmpl := codegen.MustParse(template.String())
 
 	fn, err := filepath.Abs("generated.go")
 	if err != nil {

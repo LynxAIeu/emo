@@ -2,17 +2,19 @@ package doc
 
 import (
 	"fmt"
+	"strings"
 
 	"github.com/lynxai-team/emo/codegen/core"
 )
 
 func GenDoc(ref []core.Ref) {
-	code := fileStart
+	var code strings.Builder
+	code.WriteString(fileStart)
 	for _, item := range ref {
-		code += genFunc(item.Name, item.Emoji, item.IsError)
+		code.WriteString(genFunc(item.Name, item.Emoji, item.IsError))
 	}
 
-	core.Write("doc/events/README.md", code)
+	core.Write("doc/events/README.md", code.String())
 }
 
 var fileStart = `

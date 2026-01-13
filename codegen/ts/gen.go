@@ -1,17 +1,20 @@
 package ts
 
 import (
+	"strings"
+
 	"github.com/lynxai-team/emo/codegen/core"
 )
 
 func GenTs(ref []core.Ref) {
-	code := codeStart
+	var code strings.Builder
+	code.WriteString(codeStart)
 	for _, item := range ref {
-		code += genFunc(item.Name, item.Emoji)
+		code.WriteString(genFunc(item.Name, item.Emoji))
 	}
-	code += codeEnd
+	code.WriteString(codeEnd)
 
-	core.Write("lang/typescript/src/emo_gen.ts", code)
+	core.Write("lang/typescript/src/emo_gen.ts", code.String())
 }
 
 func genFunc(name, emoji string) string {
