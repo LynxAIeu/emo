@@ -73,22 +73,37 @@ func genOtherFunctions(name, emoji string) string {
 	return `
 
 func ` + name + `(args ...any) Event {
-	return DefaultZone.NewEvent("` + emoji + `", true, args...).Print().CallHook()
+	if !DefaultZone.enabled(false) {
+		var evt Event
+		return evt
+	}
+	return DefaultZone.NewEvent("` + emoji + `", false, args...).Print().CallHook()
 }
 
 func ` + name + `f(format string, v ...any) Event {
+	if !DefaultZone.enabled(false) {
+		var evt Event
+		return evt
+	}
 	s := fmt.Sprintf(format, v...)
-	return DefaultZone.NewEvent("` + emoji + `", true, s).Print().CallHook()
+	return DefaultZone.NewEvent("` + emoji + `", false, s).Print().CallHook()
 }
 
 func (zone Zone) ` + name + `(args ...any) Event {
-	return zone.NewEvent("` + emoji + `", true, args...).Print().CallHook()
+	if !zone.enabled(false) {
+		var evt Event
+		return evt
+	}
+	return zone.NewEvent("` + emoji + `", false, args...).Print().CallHook()
 }
 
 func (zone Zone) ` + name + `f(format string, v ...any) Event {
+	if !zone.enabled(false) {
+		var evt Event
+		return evt
+	}
 	s := fmt.Sprintf(format, v...)
-	return zone.NewEvent("` + emoji + `", true, s).Print().CallHook()
+	return zone.NewEvent("` + emoji + `", false, s).Print().CallHook()
 }
-
 `
 }
