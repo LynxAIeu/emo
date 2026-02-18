@@ -69,26 +69,41 @@ class Emo:
             obj[0] = "ready"
         return self.emo("⏲️", obj)
 
-    def info(self, *args):
-        return self.emo("ℹ️", list(args))
+    def access_token(self, *args):
+        return self.emo("🔑", list(args))
 
-    def warning(self, *args):
-        return self.emo("🔔", list(args))
+    def aconstructor(self, *args):
+        return self.emo("🛠️", list(args))
 
-    def error(self, *args):
-        return self.emo("💢", list(args))
+    def aconstructor_error(self, *args):
+        return self.emo("🛠️", list(args))
 
-    def query(self, *args):
-        return self.emo("🗄️", list(args))
+    def arrow_in(self, *args):
+        return self.emo("=>", list(args))
 
-    def query_error(self, *args):
-        return self.emo("🗄️", list(args))
+    def arrow_in_error(self, *args):
+        return self.emo("=>", list(args))
 
-    def encrypt(self, *args):
-        return self.emo("🎼", list(args))
+    def arrow_out(self, *args):
+        return self.emo("<=", list(args))
 
-    def encrypt_error(self, *args):
-        return self.emo("🎼", list(args))
+    def arrow_out_error(self, *args):
+        return self.emo("<=", list(args))
+
+    def build(self, *args):
+        return self.emo("🔧", list(args))
+
+    def build_error(self, *args):
+        return self.emo("🔧", list(args))
+
+    def data(self, *args):
+        return self.emo("💼", list(args))
+
+    def data_error(self, *args):
+        return self.emo("💼", list(args))
+
+    def debug(self, *args):
+        return self.emo("💊", list(args))
 
     def decrypt(self, *args):
         return self.emo("🗝️", list(args))
@@ -96,11 +111,80 @@ class Emo:
     def decrypt_error(self, *args):
         return self.emo("🗝️", list(args))
 
-    def time(self, *args):
-        return self.emo("⏱️", list(args))
+    def delete(self, *args):
+        return self.emo("❌", list(args))
 
-    def time_error(self, *args):
-        return self.emo("⏱️", list(args))
+    def delete_error(self, *args):
+        return self.emo("❌", list(args))
+
+    def encrypt(self, *args):
+        return self.emo("🎼", list(args))
+
+    def encrypt_error(self, *args):
+        return self.emo("🎼", list(args))
+
+    def error(self, *args):
+        return self.emo("💢", list(args))
+
+    def found(self, *args):
+        return self.emo("👁️‍🗨️", list(args))
+
+    def function(self, *args):
+        return self.emo("🔨", list(args))
+
+    def function_error(self, *args):
+        return self.emo("🔨", list(args))
+
+    def in(self, *args):
+        return self.emo("→", list(args))
+
+    def in_error(self, *args):
+        return self.emo("→", list(args))
+
+    def info(self, *args):
+        return self.emo("ℹ️", list(args))
+
+    def init(self, *args):
+        return self.emo("🎬", list(args))
+
+    def init_error(self, *args):
+        return self.emo("🎬", list(args))
+
+    def input(self, *args):
+        return self.emo("📥", list(args))
+
+    def input_error(self, *args):
+        return self.emo("📥", list(args))
+
+    def key(self, *args):
+        return self.emo("🔑", list(args))
+
+    def key_error(self, *args):
+        return self.emo("🔑", list(args))
+
+    def line(self, *args):
+        return self.emo("➖", list(args))
+
+    def line_error(self, *args):
+        return self.emo("➖", list(args))
+
+    def not_found(self, *args):
+        return self.emo("🚫", list(args))
+
+    def ok(self, *args):
+        return self.emo("🆗", list(args))
+
+    def out(self, *args):
+        return self.emo("←", list(args))
+
+    def out_error(self, *args):
+        return self.emo("←", list(args))
+
+    def output(self, *args):
+        return self.emo("📤", list(args))
+
+    def output_error(self, *args):
+        return self.emo("📤", list(args))
 
     def param(self, *args):
         return self.emo("📩", list(args))
@@ -108,98 +192,92 @@ class Emo:
     def param_error(self, *args):
         return self.emo("📩", list(args))
 
-    def debug(self, *args):
-        return self.emo("💊", list(args))
+    def query(self, *args):
+        return self.emo("🗄️", list(args))
 
-    def state(self, *args):
-        return self.emo("📢", list(args))
-
-    def save(self, *args):
-        return self.emo("💾", list(args))
-
-    def delete(self, *args):
-        return self.emo("❌", list(args))
-
-    def data(self, *args):
-        return self.emo("💼", list(args))
-
-    def line(self, *args):
-        return self.emo("➖", list(args))
-
-    def init(self, *args):
-        return self.emo("🎬", list(args))
-
-    def update(self, *args):
-        return self.emo("🆙", list(args))
-
-    def ok(self, *args):
-        return self.emo("🆗", list(args))
-
-    def build(self, *args):
-        return self.emo("🔧", list(args))
-
-    def aconstructor(self, *args):
-        return self.emo("🛠️", list(args))
-
-    def not_found(self, *args):
-        return self.emo("🚫", list(args))
-
-    def found(self, *args):
-        return self.emo("👁️‍🗨️", list(args))
-
-    def result(self, *args):
-        return self.emo("📌", list(args))
-
-    def input(self, *args):
-        return self.emo("📥", list(args))
-
-    def output(self, *args):
-        return self.emo("📤", list(args))
-
-    def function(self, *args):
-        return self.emo("🔨", list(args))
-
-    def key(self, *args):
-        return self.emo("🔑", list(args))
-
-    def security(self, *args):
-        return self.emo("🔒", list(args))
-
-    def access_token(self, *args):
-        return self.emo("🔑", list(args))
+    def query_error(self, *args):
+        return self.emo("🗄️", list(args))
 
     def refresh_token(self, *args):
         return self.emo("🗝️", list(args))
 
-    def transmit(self, *args):
-        return self.emo("📡", list(args))
+    def request_get(self, *args):
+        return self.emo("🔷", list(args))
 
-    def start(self, *args):
-        return self.emo("🏁", list(args))
+    def request_get_error(self, *args):
+        return self.emo("🔷", list(args))
 
-    def stop(self, *args):
-        return self.emo("🛑", list(args))
+    def request_post(self, *args):
+        return self.emo("🔶", list(args))
 
-    def in(self, *args):
-        return self.emo("→", list(args))
+    def request_post_error(self, *args):
+        return self.emo("🔶", list(args))
 
-    def out(self, *args):
-        return self.emo("←", list(args))
+    def result(self, *args):
+        return self.emo("📌", list(args))
 
-    def arrow_in(self, *args):
-        return self.emo("=>", list(args))
+    def result_error(self, *args):
+        return self.emo("📌", list(args))
 
-    def arrow_out(self, *args):
-        return self.emo("<=", list(args))
+    def save(self, *args):
+        return self.emo("💾", list(args))
+
+    def save_error(self, *args):
+        return self.emo("💾", list(args))
+
+    def security(self, *args):
+        return self.emo("🔒", list(args))
+
+    def security_error(self, *args):
+        return self.emo("🔒", list(args))
 
     def small_arrow_in(self, *args):
+        return self.emo("->", list(args))
+
+    def small_arrow_in_error(self, *args):
         return self.emo("->", list(args))
 
     def small_arrow_out(self, *args):
         return self.emo("<-", list(args))
 
-    def request_get(self, *args):
-        return self.emo("🔷", list(args))
+    def small_arrow_out_error(self, *args):
+        return self.emo("<-", list(args))
 
-    def request_post(self, *args):
-        return self.emo("🔶", list(args))
+    def start(self, *args):
+        return self.emo("🏁", list(args))
+
+    def start_error(self, *args):
+        return self.emo("🏁", list(args))
+
+    def state(self, *args):
+        return self.emo("📢", list(args))
+
+    def state_error(self, *args):
+        return self.emo("📢", list(args))
+
+    def stop(self, *args):
+        return self.emo("🛑", list(args))
+
+    def stop_error(self, *args):
+        return self.emo("🛑", list(args))
+
+    def time(self, *args):
+        return self.emo("⏱️", list(args))
+
+    def time_error(self, *args):
+        return self.emo("⏱️", list(args))
+
+    def transmit(self, *args):
+        return self.emo("📡", list(args))
+
+    def transmit_error(self, *args):
+        return self.emo("📡", list(args))
+
+    def update(self, *args):
+        return self.emo("🆙", list(args))
+
+    def update_error(self, *args):
+        return self.emo("🆙", list(args))
+
+    def warning(self, *args):
+        return self.emo("🔔", list(args))

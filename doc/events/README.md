@@ -3,48 +3,74 @@
 
 | Name          |  Emoji |  IsError |
 |---------------|:------:|:--------:|
-| Info          |   ℹ️   |          |
-| Warning       |   🔔   |          |
-| Error         |   💢   |     ✔️    |
-| Query         |   🗄️   |          |
-| QueryError    |   🗄️   |     ✔️    |
-| Encrypt       |   🎼   |          |
-| EncryptError  |   🎼   |     ✔️    |
+| AccessToken   |   🔑   |          |
+| Aconstructor  |   🛠️   |          |
+| AconstructorError |   🛠️   |     ✔️    |
+| ArrowIn       |   =>   |          |
+| ArrowInError  |   =>   |     ✔️    |
+| ArrowOut      |   <=   |          |
+| ArrowOutError |   <=   |     ✔️    |
+| Build         |   🔧   |          |
+| BuildError    |   🔧   |     ✔️    |
+| Data          |   💼   |          |
+| DataError     |   💼   |     ✔️    |
+| Debug         |   💊   |          |
 | Decrypt       |   🗝️   |          |
 | DecryptError  |   🗝️   |     ✔️    |
-| Time          |   ⏱️   |          |
-| TimeError     |   ⏱️   |     ✔️    |
+| Delete        |   ❌   |          |
+| DeleteError   |   ❌   |     ✔️    |
+| Encrypt       |   🎼   |          |
+| EncryptError  |   🎼   |     ✔️    |
+| Error         |   💢   |     ✔️    |
+| Found         |   👁️‍🗨️   |          |
+| Function      |   🔨   |          |
+| FunctionError |   🔨   |     ✔️    |
+| In            |   →   |          |
+| InError       |   →   |     ✔️    |
+| Info          |   ℹ️   |          |
+| Init          |   🎬   |          |
+| InitError     |   🎬   |     ✔️    |
+| Input         |   📥   |          |
+| InputError    |   📥   |     ✔️    |
+| Key           |   🔑   |          |
+| KeyError      |   🔑   |     ✔️    |
+| Line          |   ➖   |          |
+| LineError     |   ➖   |     ✔️    |
+| NotFound      |   🚫   |          |
+| Ok            |   🆗   |          |
+| Out           |   ←   |          |
+| OutError      |   ←   |     ✔️    |
+| Output        |   📤   |          |
+| OutputError   |   📤   |     ✔️    |
 | Param         |   📩   |          |
 | ParamError    |   📩   |     ✔️    |
-| Debug         |   💊   |          |
-| State         |   📢   |          |
-| Save          |   💾   |          |
-| Delete        |   ❌   |          |
-| Data          |   💼   |          |
-| Line          |   ➖   |          |
-| Init          |   🎬   |          |
-| Update        |   🆙   |          |
-| Ok            |   🆗   |          |
-| Build         |   🔧   |          |
-| Aconstructor  |   🛠️   |          |
-| NotFound      |   🚫   |          |
-| Found         |   👁️‍🗨️   |          |
-| Result        |   📌   |          |
-| Input         |   📥   |          |
-| Output        |   📤   |          |
-| Function      |   🔨   |          |
-| Key           |   🔑   |          |
-| Security      |   🔒   |          |
-| AccessToken   |   🔑   |          |
+| Query         |   🗄️   |          |
+| QueryError    |   🗄️   |     ✔️    |
 | RefreshToken  |   🗝️   |          |
-| Transmit      |   📡   |          |
-| Start         |   🏁   |          |
-| Stop          |   🛑   |          |
-| In            |   →   |          |
-| Out           |   ←   |          |
-| ArrowIn       |   =>   |          |
-| ArrowOut      |   <=   |          |
-| SmallArrowIn  |   ->   |          |
-| SmallArrowOut |   <-   |          |
 | RequestGet    |   🔷   |          |
+| RequestGetError |   🔷   |     ✔️    |
 | RequestPost   |   🔶   |          |
+| RequestPostError |   🔶   |     ✔️    |
+| Result        |   📌   |          |
+| ResultError   |   📌   |     ✔️    |
+| Save          |   💾   |          |
+| SaveError     |   💾   |     ✔️    |
+| Security      |   🔒   |          |
+| SecurityError |   🔒   |     ✔️    |
+| SmallArrowIn  |   ->   |          |
+| SmallArrowInError |   ->   |     ✔️    |
+| SmallArrowOut |   <-   |          |
+| SmallArrowOutError |   <-   |     ✔️    |
+| Start         |   🏁   |          |
+| StartError    |   🏁   |     ✔️    |
+| State         |   📢   |          |
+| StateError    |   📢   |     ✔️    |
+| Stop          |   🛑   |          |
+| StopError     |   🛑   |     ✔️    |
+| Time          |   ⏱️   |          |
+| TimeError     |   ⏱️   |     ✔️    |
+| Transmit      |   📡   |          |
+| TransmitError |   📡   |     ✔️    |
+| Update        |   🆙   |          |
+| UpdateError   |   🆙   |     ✔️    |
+| Warning       |   🔔   |          |
