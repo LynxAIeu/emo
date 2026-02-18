@@ -15,7 +15,13 @@ func GenGo(ref []core.Ref) {
 	var template strings.Builder
 	template.WriteString(fileStart)
 	for _, item := range ref {
-		template.WriteString(genFunc(item.Name, item.Emoji, item.IsError))
+		var functions string
+		if item.IsError {
+			functions = genErrorFunctions(item.Name, item.Emoji)
+		} else {
+			functions = genOtherFunctions(item.Name, item.Emoji)
+		}
+		template.WriteString(functions)
 	}
 
 	tmpl := codegen.MustParse(template.String())
@@ -39,8 +45,8 @@ package emo
 import "fmt"
 `
 
-func genFunc(name, emoji string, isError bool) string {
-	errorFunctions := `
+func genErrorFunctions(name, emoji string) string {
+	return `
 
 func ` + name + `(args ...any) Event {
 	return DefaultZone.NewEvent("` + emoji + `", true, args...).Print().CallHook()
@@ -61,46 +67,28 @@ func (zone Zone) ` + name + `f(format string, v ...any) Event {
 }
 
 `
-	nonErrorFunctions := `
+}
+
+func genOtherFunctions(name, emoji string) string {
+	return `
 
 func ` + name + `(args ...any) Event {
-	if !DefaultZone.enabled(false) {
-		var evt Event
-		return evt
-	}
-	return DefaultZone.NewEvent("` + emoji + `", false, args...).Print().CallHook()
+	return DefaultZone.NewEvent("` + emoji + `", true, args...).Print().CallHook()
 }
 
 func ` + name + `f(format string, v ...any) Event {
-	if !DefaultZone.enabled(false) {
-		var evt Event
-		return evt
-	}
 	s := fmt.Sprintf(format, v...)
-	return DefaultZone.NewEvent("` + emoji + `", false, s).Print().CallHook()
+	return DefaultZone.NewEvent("` + emoji + `", true, s).Print().CallHook()
 }
 
 func (zone Zone) ` + name + `(args ...any) Event {
-	if !zone.enabled(false) {
-		var evt Event
-		return evt
-	}
-	return zone.NewEvent("` + emoji + `", false, args...).Print().CallHook()
+	return zone.NewEvent("` + emoji + `", true, args...).Print().CallHook()
 }
 
 func (zone Zone) ` + name + `f(format string, v ...any) Event {
-	if !zone.enabled(false) {
-		var evt Event
-		return evt
-	}
 	s := fmt.Sprintf(format, v...)
-	return zone.NewEvent("` + emoji + `", false, s).Print().CallHook()
+	return zone.NewEvent("` + emoji + `", true, s).Print().CallHook()
 }
-`
 
-	if isError {
-		return errorFunctions
-	} else {
-		return nonErrorFunctions
-	}
+`
 }
