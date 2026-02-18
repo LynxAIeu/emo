@@ -7,15 +7,15 @@ help:
 	# make dart   Generate code for the Dart library
 	# make doc    Generate the documentation
 	#
-	# make up     Go: Upgrade the patch version of the dependencies
-	# make up+    Go: Upgrade the minor version of the dependencies
-	# make fmt    Go: Generate code and Format code
-	# make test   Go: Check build and Test
-	# make cov    Go: Browse test coverage
-	# make fix    Go: Run example and Lint
+	# make up     Upgrade the patch version of the dependencies
+	# make up+    Upgrade the minor version of the dependencies
+	# make fmt    Generate code and Format code
+	# make test   Check build and Test
+	# make cov    Browse test coverage
+	# make fix    Run example and Lint
 
 .PHONY: all
-all: up fmt test fix go.sum
+all: up fmt test fix
 
 .PHONY: go
 go:
@@ -36,12 +36,11 @@ dart:
 .PHONY: doc
 doc:
 	go run codegen/main.go -doc
-
-go.sum: go.mod
-	go mod tidy
-
 go.mod:
 	go mod init github.com/lynxai-team/emo
+	go mod tidy
+
+go.sum: go.mod
 	go mod tidy
 
 .PHONY: up
@@ -60,18 +59,17 @@ fmt:
 	go run mvdan.cc/gofumpt@latest -w -extra -l .
 
 .PHONY: test
-test:
+test: code-coverage.out
 	go build ./...
-	go test -race -vet all -tags=emo -coverprofile=code-coverage.out ./...
-
-code-coverage.out: go.sum */*.go
-	go test -race -vet all -tags=emo -coverprofile=code-coverage.out ./...
 
 .PHONY: cov
 cov: code-coverage.out
 	go tool cover -html code-coverage.out
 
+code-coverage.out: go.sum *.go Makefile
+	go test -race -vet all -tags=emo -coverprofile=code-coverage.out ./...
+
 .PHONY: fix
 fix:
 	go fix ./...
-	go run github.com/golangci/golangci-lint/cmd/golangci-lint@latest run --fix
+	go run github.com/golangci/golangci-lint/v2/cmd/golangci-lint@latest run --fix
