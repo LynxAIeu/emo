@@ -20,19 +20,9 @@
     "isError": false
   },
   {
-    "name": "QueryError",
-    "emoji": "🗄️",
-    "isError": true
-  },
-  {
     "name": "Encrypt",
     "emoji": "🎼",
     "isError": false
-  },
-  {
-    "name": "EncryptError",
-    "emoji": "🎼",
-    "isError": true
   },
   {
     "name": "Decrypt",
@@ -40,29 +30,14 @@
     "isError": false
   },
   {
-    "name": "DecryptError",
-    "emoji": "🗝️",
-    "isError": true
-  },
-  {
     "name": "Time",
     "emoji": "⏱️",
     "isError": false
   },
   {
-    "name": "TimeError",
-    "emoji": "⏱️",
-    "isError": true
-  },
-  {
     "name": "Param",
     "emoji": "📩",
     "isError": false
-  },
-  {
-    "name": "ParamError",
-    "emoji": "📩",
-    "isError": true
   },
   {
     "name": "Debug",

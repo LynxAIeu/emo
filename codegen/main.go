@@ -30,6 +30,7 @@ func main() {
 	}
 
 	ref := core.GetRef()
+	ref = core.Sanitize(ref)
 
 	if enableAll || *dartf {
 		fmt.Println("[codegen] Generating Dart code")
