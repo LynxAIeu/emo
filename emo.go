@@ -305,10 +305,6 @@ func (e Event) Stack(optionalPosition ...int) Event {
 	return e
 }
 
-func (zone Zone) enabled(isError bool) bool {
-	return zone.toBePrinted(isError) || zone.hookPresent()
-}
-
 func (e Event) toBePrinted() bool {
 	return e.Zone.toBePrinted(e.IsError)
 }
