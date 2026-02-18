@@ -12,10 +12,10 @@ help:
 	# make fmt    Go: Generate code and Format code
 	# make test   Go: Check build and Test
 	# make cov    Go: Browse test coverage
-	# make vet    Go: Run example and Lint
+	# make fix    Go: Run example and Lint
 
 .PHONY: all
-all: up fmt test vet
+all: up fmt test fix go.sum
 
 .PHONY: go
 go:
@@ -40,6 +40,10 @@ doc:
 go.sum: go.mod
 	go mod tidy
 
+go.mod:
+	go mod init github.com/lynxai-team/emo
+	go mod tidy
+
 .PHONY: up
 up: go.sum
 	GOPROXY=direct go get -t -u=patch all
@@ -53,7 +57,7 @@ up+: go.sum
 .PHONY: fmt
 fmt:
 	go generate ./...
-	go run mvdan.cc/gofumpt@latest -w -extra -l -lang go1.25 .
+	go run mvdan.cc/gofumpt@latest -w -extra -l .
 
 .PHONY: test
 test:
@@ -67,7 +71,7 @@ code-coverage.out: go.sum */*.go
 cov: code-coverage.out
 	go tool cover -html code-coverage.out
 
-.PHONY: vet
-vet:
-	go run -race ./examples/go
-	go run -race github.com/golangci/golangci-lint/cmd/golangci-lint@latest run --fix
+.PHONY: fix
+fix:
+	go fix ./...
+	go run github.com/golangci/golangci-lint/cmd/golangci-lint@latest run --fix
