@@ -49,17 +49,23 @@ export default class Emo {
 
 	aconstructorError(...obj: any[]): string { return this.emo("🛠️", obj); }
 
-	arrowIn(...obj: any[]): string { return this.emo("=>", obj); }
+	arrowDown(...obj: any[]): string { return this.emo("⬇️", obj); }
 
-	arrowInError(...obj: any[]): string { return this.emo("=>", obj); }
+	arrowIn(...obj: any[]): string { return this.emo("➡️", obj); }
 
-	arrowOut(...obj: any[]): string { return this.emo("<=", obj); }
+	arrowOut(...obj: any[]): string { return this.emo("⬅️", obj); }
 
-	arrowOutError(...obj: any[]): string { return this.emo("<=", obj); }
+	arrowUp(...obj: any[]): string { return this.emo("⬆️", obj); }
+
+	bad(...obj: any[]): string { return this.emo("👎", obj); }
+
+	badError(...obj: any[]): string { return this.emo("👎", obj); }
 
 	build(...obj: any[]): string { return this.emo("🔧", obj); }
 
 	buildError(...obj: any[]): string { return this.emo("🔧", obj); }
+
+	check(...obj: any[]): string { return this.emo("✅", obj); }
 
 	data(...obj: any[]): string { return this.emo("💼", obj); }
 
@@ -75,6 +81,10 @@ export default class Emo {
 
 	deleteError(...obj: any[]): string { return this.emo("❌", obj); }
 
+	down(...obj: any[]): string { return this.emo("🢷", obj); }
+
+	downError(...obj: any[]): string { return this.emo("🢷", obj); }
+
 	encrypt(...obj: any[]): string { return this.emo("🎼", obj); }
 
 	encryptError(...obj: any[]): string { return this.emo("🎼", obj); }
@@ -87,9 +97,11 @@ export default class Emo {
 
 	functionError(...obj: any[]): string { return this.emo("🔨", obj); }
 
-	in(...obj: any[]): string { return this.emo("→", obj); }
+	good(...obj: any[]): string { return this.emo("👍", obj); }
 
-	inError(...obj: any[]): string { return this.emo("→", obj); }
+	in(...obj: any[]): string { return this.emo("🢶", obj); }
+
+	inError(...obj: any[]): string { return this.emo("🢶", obj); }
 
 	info(...obj: any[]): string { return this.emo("ℹ️", obj); }
 
@@ -113,9 +125,9 @@ export default class Emo {
 
 	ok(...obj: any[]): string { return this.emo("🆗", obj); }
 
-	out(...obj: any[]): string { return this.emo("←", obj); }
+	out(...obj: any[]): string { return this.emo("🢴", obj); }
 
-	outError(...obj: any[]): string { return this.emo("←", obj); }
+	outError(...obj: any[]): string { return this.emo("🢴", obj); }
 
 	output(...obj: any[]): string { return this.emo("📤", obj); }
 
@@ -141,8 +153,6 @@ export default class Emo {
 
 	result(...obj: any[]): string { return this.emo("📌", obj); }
 
-	resultError(...obj: any[]): string { return this.emo("📌", obj); }
-
 	save(...obj: any[]): string { return this.emo("💾", obj); }
 
 	saveError(...obj: any[]): string { return this.emo("💾", obj); }
@@ -151,13 +161,13 @@ export default class Emo {
 
 	securityError(...obj: any[]): string { return this.emo("🔒", obj); }
 
-	smallArrowIn(...obj: any[]): string { return this.emo("->", obj); }
+	smallArrowDown(...obj: any[]): string { return this.emo("🢃", obj); }
 
-	smallArrowInError(...obj: any[]): string { return this.emo("->", obj); }
+	smallArrowIn(...obj: any[]): string { return this.emo("⟿", obj); }
 
-	smallArrowOut(...obj: any[]): string { return this.emo("<-", obj); }
+	smallArrowOut(...obj: any[]): string { return this.emo("⟻", obj); }
 
-	smallArrowOutError(...obj: any[]): string { return this.emo("<-", obj); }
+	smallArrowUp(...obj: any[]): string { return this.emo("🢁", obj); }
 
 	start(...obj: any[]): string { return this.emo("🏁", obj); }
 
@@ -178,6 +188,10 @@ export default class Emo {
 	transmit(...obj: any[]): string { return this.emo("📡", obj); }
 
 	transmitError(...obj: any[]): string { return this.emo("📡", obj); }
+
+	up(...obj: any[]): string { return this.emo("🢵", obj); }
+
+	upError(...obj: any[]): string { return this.emo("🢵", obj); }
 
 	update(...obj: any[]): string { return this.emo("🆙", obj); }
 

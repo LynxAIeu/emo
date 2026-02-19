@@ -113,25 +113,35 @@ class EmoDebug {
   /// emoji: 🛠️
   String aconstructorError([dynamic obj, String? domain]) => emo("🛠️", obj, domain);
 
+  /// A debug message for arrowDown
+  ///
+  /// emoji: ⬇️
+  String arrowDown([dynamic obj, String? domain]) => emo("⬇️", obj, domain);
+
   /// A debug message for arrowIn
   ///
-  /// emoji: =>
-  String arrowIn([dynamic obj, String? domain]) => emo("=>", obj, domain);
-
-  /// A debug message for arrowInError
-  ///
-  /// emoji: =>
-  String arrowInError([dynamic obj, String? domain]) => emo("=>", obj, domain);
+  /// emoji: ➡️
+  String arrowIn([dynamic obj, String? domain]) => emo("➡️", obj, domain);
 
   /// A debug message for arrowOut
   ///
-  /// emoji: <=
-  String arrowOut([dynamic obj, String? domain]) => emo("<=", obj, domain);
+  /// emoji: ⬅️
+  String arrowOut([dynamic obj, String? domain]) => emo("⬅️", obj, domain);
 
-  /// A debug message for arrowOutError
+  /// A debug message for arrowUp
   ///
-  /// emoji: <=
-  String arrowOutError([dynamic obj, String? domain]) => emo("<=", obj, domain);
+  /// emoji: ⬆️
+  String arrowUp([dynamic obj, String? domain]) => emo("⬆️", obj, domain);
+
+  /// A debug message for bad
+  ///
+  /// emoji: 👎
+  String bad([dynamic obj, String? domain]) => emo("👎", obj, domain);
+
+  /// A debug message for badError
+  ///
+  /// emoji: 👎
+  String badError([dynamic obj, String? domain]) => emo("👎", obj, domain);
 
   /// A debug message for build
   ///
@@ -142,6 +152,11 @@ class EmoDebug {
   ///
   /// emoji: 🔧
   String buildError([dynamic obj, String? domain]) => emo("🔧", obj, domain);
+
+  /// A debug message for check
+  ///
+  /// emoji: ✅
+  String check([dynamic obj, String? domain]) => emo("✅", obj, domain);
 
   /// A debug message for data
   ///
@@ -178,6 +193,16 @@ class EmoDebug {
   /// emoji: ❌
   String deleteError([dynamic obj, String? domain]) => emo("❌", obj, domain);
 
+  /// A debug message for down
+  ///
+  /// emoji: 🢷
+  String down([dynamic obj, String? domain]) => emo("🢷", obj, domain);
+
+  /// A debug message for downError
+  ///
+  /// emoji: 🢷
+  String downError([dynamic obj, String? domain]) => emo("🢷", obj, domain);
+
   /// A debug message for encrypt
   ///
   /// emoji: 🎼
@@ -208,15 +233,20 @@ class EmoDebug {
   /// emoji: 🔨
   String functionError([dynamic obj, String? domain]) => emo("🔨", obj, domain);
 
+  /// A debug message for good
+  ///
+  /// emoji: 👍
+  String good([dynamic obj, String? domain]) => emo("👍", obj, domain);
+
   /// A debug message for in
   ///
-  /// emoji: →
-  String in([dynamic obj, String? domain]) => emo("→", obj, domain);
+  /// emoji: 🢶
+  String in([dynamic obj, String? domain]) => emo("🢶", obj, domain);
 
   /// A debug message for inError
   ///
-  /// emoji: →
-  String inError([dynamic obj, String? domain]) => emo("→", obj, domain);
+  /// emoji: 🢶
+  String inError([dynamic obj, String? domain]) => emo("🢶", obj, domain);
 
   /// A debug message for info
   ///
@@ -275,13 +305,13 @@ class EmoDebug {
 
   /// A debug message for out
   ///
-  /// emoji: ←
-  String out([dynamic obj, String? domain]) => emo("←", obj, domain);
+  /// emoji: 🢴
+  String out([dynamic obj, String? domain]) => emo("🢴", obj, domain);
 
   /// A debug message for outError
   ///
-  /// emoji: ←
-  String outError([dynamic obj, String? domain]) => emo("←", obj, domain);
+  /// emoji: 🢴
+  String outError([dynamic obj, String? domain]) => emo("🢴", obj, domain);
 
   /// A debug message for output
   ///
@@ -343,11 +373,6 @@ class EmoDebug {
   /// emoji: 📌
   String result([dynamic obj, String? domain]) => emo("📌", obj, domain);
 
-  /// A debug message for resultError
-  ///
-  /// emoji: 📌
-  String resultError([dynamic obj, String? domain]) => emo("📌", obj, domain);
-
   /// A debug message for save
   ///
   /// emoji: 💾
@@ -368,25 +393,25 @@ class EmoDebug {
   /// emoji: 🔒
   String securityError([dynamic obj, String? domain]) => emo("🔒", obj, domain);
 
+  /// A debug message for smallArrowDown
+  ///
+  /// emoji: 🢃
+  String smallArrowDown([dynamic obj, String? domain]) => emo("🢃", obj, domain);
+
   /// A debug message for smallArrowIn
   ///
-  /// emoji: ->
-  String smallArrowIn([dynamic obj, String? domain]) => emo("->", obj, domain);
-
-  /// A debug message for smallArrowInError
-  ///
-  /// emoji: ->
-  String smallArrowInError([dynamic obj, String? domain]) => emo("->", obj, domain);
+  /// emoji: ⟿
+  String smallArrowIn([dynamic obj, String? domain]) => emo("⟿", obj, domain);
 
   /// A debug message for smallArrowOut
   ///
-  /// emoji: <-
-  String smallArrowOut([dynamic obj, String? domain]) => emo("<-", obj, domain);
+  /// emoji: ⟻
+  String smallArrowOut([dynamic obj, String? domain]) => emo("⟻", obj, domain);
 
-  /// A debug message for smallArrowOutError
+  /// A debug message for smallArrowUp
   ///
-  /// emoji: <-
-  String smallArrowOutError([dynamic obj, String? domain]) => emo("<-", obj, domain);
+  /// emoji: 🢁
+  String smallArrowUp([dynamic obj, String? domain]) => emo("🢁", obj, domain);
 
   /// A debug message for start
   ///
@@ -437,6 +462,16 @@ class EmoDebug {
   ///
   /// emoji: 📡
   String transmitError([dynamic obj, String? domain]) => emo("📡", obj, domain);
+
+  /// A debug message for up
+  ///
+  /// emoji: 🢵
+  String up([dynamic obj, String? domain]) => emo("🢵", obj, domain);
+
+  /// A debug message for upError
+  ///
+  /// emoji: 🢵
+  String upError([dynamic obj, String? domain]) => emo("🢵", obj, domain);
 
   /// A debug message for update
   ///

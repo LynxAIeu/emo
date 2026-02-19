@@ -6,12 +6,15 @@
 | AccessToken   |   🔑   |          |
 | Aconstructor  |   🛠️   |          |
 | AconstructorError |   🛠️   |     ✔️    |
-| ArrowIn       |   =>   |          |
-| ArrowInError  |   =>   |     ✔️    |
-| ArrowOut      |   <=   |          |
-| ArrowOutError |   <=   |     ✔️    |
+| ArrowDown     |   ⬇️   |          |
+| ArrowIn       |   ➡️   |          |
+| ArrowOut      |   ⬅️   |          |
+| ArrowUp       |   ⬆️   |          |
+| Bad           |   👎   |          |
+| BadError      |   👎   |     ✔️    |
 | Build         |   🔧   |          |
 | BuildError    |   🔧   |     ✔️    |
+| Check         |   ✅   |          |
 | Data          |   💼   |          |
 | DataError     |   💼   |     ✔️    |
 | Debug         |   💊   |          |
@@ -19,14 +22,17 @@
 | DecryptError  |   🗝️   |     ✔️    |
 | Delete        |   ❌   |          |
 | DeleteError   |   ❌   |     ✔️    |
+| Down          |   🢷   |          |
+| DownError     |   🢷   |     ✔️    |
 | Encrypt       |   🎼   |          |
 | EncryptError  |   🎼   |     ✔️    |
 | Error         |   💢   |     ✔️    |
 | Found         |   👁️‍🗨️   |          |
 | Function      |   🔨   |          |
 | FunctionError |   🔨   |     ✔️    |
-| In            |   →   |          |
-| InError       |   →   |     ✔️    |
+| Good          |   👍   |          |
+| In            |   🢶   |          |
+| InError       |   🢶   |     ✔️    |
 | Info          |   ℹ️   |          |
 | Init          |   🎬   |          |
 | InitError     |   🎬   |     ✔️    |
@@ -38,8 +44,8 @@
 | LineError     |   ➖   |     ✔️    |
 | NotFound      |   🚫   |          |
 | Ok            |   🆗   |          |
-| Out           |   ←   |          |
-| OutError      |   ←   |     ✔️    |
+| Out           |   🢴   |          |
+| OutError      |   🢴   |     ✔️    |
 | Output        |   📤   |          |
 | OutputError   |   📤   |     ✔️    |
 | Param         |   📩   |          |
@@ -52,15 +58,14 @@
 | RequestPost   |   🔶   |          |
 | RequestPostError |   🔶   |     ✔️    |
 | Result        |   📌   |          |
-| ResultError   |   📌   |     ✔️    |
 | Save          |   💾   |          |
 | SaveError     |   💾   |     ✔️    |
 | Security      |   🔒   |          |
 | SecurityError |   🔒   |     ✔️    |
-| SmallArrowIn  |   ->   |          |
-| SmallArrowInError |   ->   |     ✔️    |
-| SmallArrowOut |   <-   |          |
-| SmallArrowOutError |   <-   |     ✔️    |
+| SmallArrowDown |   🢃   |          |
+| SmallArrowIn  |   ⟿   |          |
+| SmallArrowOut |   ⟻   |          |
+| SmallArrowUp  |   🢁   |          |
 | Start         |   🏁   |          |
 | StartError    |   🏁   |     ✔️    |
 | State         |   📢   |          |
@@ -71,6 +76,8 @@
 | TimeError     |   ⏱️   |     ✔️    |
 | Transmit      |   📡   |          |
 | TransmitError |   📡   |     ✔️    |
+| Up            |   🢵   |          |
+| UpError       |   🢵   |     ✔️    |
 | Update        |   🆙   |          |
 | UpdateError   |   🆙   |     ✔️    |
 | Warning       |   🔔   |          |

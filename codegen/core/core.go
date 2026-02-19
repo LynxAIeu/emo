@@ -18,7 +18,9 @@ type Ref struct {
 	IsError bool   `json:"isError"`
 }
 
-var doNotAppendError = []string{"error", "warn", "info", "debug", "panic", "ok", "found"}
+var doNotAppendError = []string{
+	"error", "warn", "info", "debug", "panic", "ok", "found", "arrow", "check", "good", "result",
+}
 
 func containsInfoWarnError(name string) bool {
 	name = strings.ToLower(name)

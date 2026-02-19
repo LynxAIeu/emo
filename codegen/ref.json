@@ -85,6 +85,21 @@
     "isError": false
   },
   {
+    "name": "Check",
+    "emoji": "✅",
+    "isError": false
+  },
+  {
+    "name": "Good",
+    "emoji": "👍",
+    "isError": false
+  },
+  {
+    "name": "Bad",
+    "emoji": "👎",
+    "isError": false
+  },
+  {
     "name": "Build",
     "emoji": "🔧",
     "isError": false
@@ -161,32 +176,62 @@
   },
   {
     "name": "In",
-    "emoji": "→",
+    "emoji": "🢶",
     "isError": false
   },
   {
     "name": "Out",
-    "emoji": "←",
+    "emoji": "🢴",
+    "isError": false
+  },
+  {
+    "name": "Up",
+    "emoji": "🢵",
+    "isError": false
+  },
+  {
+    "name": "Down",
+    "emoji": "🢷",
     "isError": false
   },
   {
     "name": "ArrowIn",
-    "emoji": "=>",
+    "emoji": "➡️",
     "isError": false
   },
   {
     "name": "ArrowOut",
-    "emoji": "<=",
+    "emoji": "⬅️",
+    "isError": false
+  },
+  {
+    "name": "ArrowUp",
+    "emoji": "⬆️",
+    "isError": false
+  },
+  {
+    "name": "ArrowDown",
+    "emoji": "⬇️",
     "isError": false
   },
   {
     "name": "SmallArrowIn",
-    "emoji": "->",
+    "emoji": "⟿",
     "isError": false
   },
   {
     "name": "SmallArrowOut",
-    "emoji": "<-",
+    "emoji": "⟻",
+    "isError": false
+  },
+  {
+    "name": "SmallArrowUp",
+    "emoji": "🢁",
+    "isError": false
+  },
+  {
+    "name": "SmallArrowDown",
+    "emoji": "🢃",
     "isError": false
   },
   {

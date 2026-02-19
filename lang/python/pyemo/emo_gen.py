@@ -78,23 +78,32 @@ class Emo:
     def aconstructor_error(self, *args):
         return self.emo("🛠️", list(args))
 
-    def arrow_in(self, *args):
-        return self.emo("=>", list(args))
+    def arrow_down(self, *args):
+        return self.emo("⬇️", list(args))
 
-    def arrow_in_error(self, *args):
-        return self.emo("=>", list(args))
+    def arrow_in(self, *args):
+        return self.emo("➡️", list(args))
 
     def arrow_out(self, *args):
-        return self.emo("<=", list(args))
+        return self.emo("⬅️", list(args))
 
-    def arrow_out_error(self, *args):
-        return self.emo("<=", list(args))
+    def arrow_up(self, *args):
+        return self.emo("⬆️", list(args))
+
+    def bad(self, *args):
+        return self.emo("👎", list(args))
+
+    def bad_error(self, *args):
+        return self.emo("👎", list(args))
 
     def build(self, *args):
         return self.emo("🔧", list(args))
 
     def build_error(self, *args):
         return self.emo("🔧", list(args))
+
+    def check(self, *args):
+        return self.emo("✅", list(args))
 
     def data(self, *args):
         return self.emo("💼", list(args))
@@ -117,6 +126,12 @@ class Emo:
     def delete_error(self, *args):
         return self.emo("❌", list(args))
 
+    def down(self, *args):
+        return self.emo("🢷", list(args))
+
+    def down_error(self, *args):
+        return self.emo("🢷", list(args))
+
     def encrypt(self, *args):
         return self.emo("🎼", list(args))
 
@@ -135,11 +150,14 @@ class Emo:
     def function_error(self, *args):
         return self.emo("🔨", list(args))
 
+    def good(self, *args):
+        return self.emo("👍", list(args))
+
     def in(self, *args):
-        return self.emo("→", list(args))
+        return self.emo("🢶", list(args))
 
     def in_error(self, *args):
-        return self.emo("→", list(args))
+        return self.emo("🢶", list(args))
 
     def info(self, *args):
         return self.emo("ℹ️", list(args))
@@ -175,10 +193,10 @@ class Emo:
         return self.emo("🆗", list(args))
 
     def out(self, *args):
-        return self.emo("←", list(args))
+        return self.emo("🢴", list(args))
 
     def out_error(self, *args):
-        return self.emo("←", list(args))
+        return self.emo("🢴", list(args))
 
     def output(self, *args):
         return self.emo("📤", list(args))
@@ -216,9 +234,6 @@ class Emo:
     def result(self, *args):
         return self.emo("📌", list(args))
 
-    def result_error(self, *args):
-        return self.emo("📌", list(args))
-
     def save(self, *args):
         return self.emo("💾", list(args))
 
@@ -231,17 +246,17 @@ class Emo:
     def security_error(self, *args):
         return self.emo("🔒", list(args))
 
-    def small_arrow_in(self, *args):
-        return self.emo("->", list(args))
+    def small_arrow_down(self, *args):
+        return self.emo("🢃", list(args))
 
-    def small_arrow_in_error(self, *args):
-        return self.emo("->", list(args))
+    def small_arrow_in(self, *args):
+        return self.emo("⟿", list(args))
 
     def small_arrow_out(self, *args):
-        return self.emo("<-", list(args))
+        return self.emo("⟻", list(args))
 
-    def small_arrow_out_error(self, *args):
-        return self.emo("<-", list(args))
+    def small_arrow_up(self, *args):
+        return self.emo("🢁", list(args))
 
     def start(self, *args):
         return self.emo("🏁", list(args))
@@ -272,6 +287,12 @@ class Emo:
 
     def transmit_error(self, *args):
         return self.emo("📡", list(args))
+
+    def up(self, *args):
+        return self.emo("🢵", list(args))
+
+    def up_error(self, *args):
+        return self.emo("🢵", list(args))
 
     def update(self, *args):
         return self.emo("🆙", list(args))
